@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+/* Зураг болон сумнуудыг агуулагчтай харьцангуй байршуулна */
+.container {
+    position: relative;
+}
+/* Эхлээд бүх зургийг нууна */
+.mySlides {
+    display: none;
+}
+/* Зураг дээр очиход курсорыг гар болгоно */
+.cursor {
+    cursor: pointer;
+}
+/* Баруун зүүн сум */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+/* Баруун сумыг барууун талд байрлуулна */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* Суман дээр очиход цаад өнгийг бараан болгоно */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Дугаарлалт (1/3 г.м) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* Зургийн тайлбар */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* 6 жижиг зургийг нэг мөрөнд оруулна */
+.column {
+    float: left;
+    width: 16.66%;
+}
+/* Жижиг зургийг тодруулж, бүдэгрүүлэх эффект */
+.demo {
+    opacity: 0.6;
+}
+.active,
+.demo:hover {
+    opacity: 1;
+}

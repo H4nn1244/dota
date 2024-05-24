@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;   
+}
+nav{ 
+    display: grid;
+    place-items: center;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    
+}
+nav ul{
+    list-style-type: none;
+}
+
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.2s ease-in;
+    font-size: 18px;
+}
+nav ul a:hover{
+    color: rgb(194, 50, 50);  
+}
+nav ul li.active{
+    color: rgb(136, 2, 2);
+}
+.items {
+    display: flex;
+    margin-bottom: 20px;
+}
+.items img:hover{
+    transform:scale(1.05)
+}
+.items h4 {
+    margin-top: auto;
+    margin-bottom: 10px;
+    color: rgb(24, 216, 24);
+}
+.items p {
+    margin: 0 0 10px 0;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    
+}
+.background-clip{
+    position: fixed;
+    left: auto;
+    bottom: 0;
+    z-index: -1;
+    min-width: 100vw;
+    object-fit: cover;
+    
+}
+.items p{
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    }
+    /* Зураг болон сумнуудыг агуулагчтай харьцангуй байршуулна */
+    .container {
+    position: relative;
+    }
+    /* Эхлээд бүх зургийг нууна */
+    .mySlides {
+    display: none;
+    }
+    /* Зураг дээр очиход курсорыг гар болгоно */
+    .cursor {
+    cursor: pointer;
+    }
+    /* Баруун зүүн сум */
+    .prev,
+    .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    }
+    /* Баруун сумыг барууун талд байрлуулна */
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+        /* Суман дээр очиход цаад өнгийг бараан болгоно */
+        .prev:hover,
+        .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Дугаарлалт (1/3 г.м) */
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+        /* Зургийн тайлбар */
+        .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+        }
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        /* 6 жижиг зургийг нэг мөрөнд оруулна */
+        .column {
+        float: left;
+        width: 16.66%;
+        }
+        /* Жижиг зургийг тодруулж, бүдэгрүүлэх эффект */
+        .demo {
+        opacity: 0.6;
+        }
+        .active,
+        .demo:hover {
+        opacity: 1;
+        }
+
+        
